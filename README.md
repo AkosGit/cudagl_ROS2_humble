@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a Dockerfile to use OpenGL/CUDA/Vulkan application on Docker container with NVIDIA GPU.
+This is a Dockerfile to use OpenGL/CUDA/Vulkan with ROS2 humble on Docker container with NVIDIA GPU.
 
 |glxgears|vulkaninfo|
 |---|---|
