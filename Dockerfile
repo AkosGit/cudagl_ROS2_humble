@@ -58,3 +58,21 @@ SHELL ["/bin/bash", "-l", "-c"]
 RUN echo "export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json" >> ~/.bashrc
 RUN echo "export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR}" >> ~/.bashrc
 
+
+# install ROS related stuff
+RUN apt install -y --no-install-recommends software-properties-common
+RUN add-apt-repository universe
+RUN apt update && apt install -y --no-install-recommends curl -y
+RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release \
+&& echo  $UBUNTU_CODENAME) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null
+RUN apt-get update \
+ && apt-get install
+RUN apt install -y --no-install-recommends ros-humble-desktop
+RUN apt install -y --no-install-recommends ros-dev-tools
+RUN apt install -y --no-install-recommends libxml2-dev libraw1394-dev libncurses5-dev qtcreator swig sox espeak cmake-curses-gui cmake-qt-gui git subversion gfortran libcppunit-dev \
+libqt5xmlpatterns5-dev python3-osrf-pycommon libasound2-dev libgl1-mesa-dev xorg-dev python3-vcstool python3-colcon-common-extensions python3-pykdl python3-pyudev libxml2-dev \
+libraw1394-dev libncurses5-dev qtcreator swig sox espeak cmake-curses-gui cmake-qt-gui git subversion gfortran libcppunit-dev libqt5xmlpatterns5-dev libbluetooth-dev \
+ros-humble-joint-state-publisher* ros-humble-xacro gfortran-9
+
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc # not working
