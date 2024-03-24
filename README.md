@@ -12,7 +12,8 @@ This is a Dockerfile to use OpenGL/CUDA/Vulkan application on Docker container w
 
 - NVIDIA graphics driver
 - Docker
-- nvidia-docker2
+- xorg-xhost
+- nvidia-container-toolkit
 
 ## Build docker image
 
