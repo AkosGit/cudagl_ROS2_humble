@@ -51,4 +51,12 @@ libqt5xmlpatterns5-dev python3-osrf-pycommon libasound2-dev libgl1-mesa-dev xorg
 libraw1394-dev libncurses5-dev qtcreator swig sox espeak cmake-curses-gui cmake-qt-gui git subversion gfortran libcppunit-dev libqt5xmlpatterns5-dev libbluetooth-dev \
 ros-humble-joint-state-publisher* ros-humble-xacro gfortran-9
 
-RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc # not working?
+
+
+
+RUN wget https://packages.osrfoundation.org/gazebo.gpg -O /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg
+RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/gazebo-stable.list > /dev/null
+RUN apt-get update
+RUN apt-get install gz-harmonic -y --no-install-recommends 
+
+#RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc # not working?
