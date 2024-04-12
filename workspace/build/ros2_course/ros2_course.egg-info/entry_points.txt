@@ -1,0 +1,4 @@
+[console_scripts]
+hello = ros2_course.hello:main
+talker = ros2_course.talker:main
+

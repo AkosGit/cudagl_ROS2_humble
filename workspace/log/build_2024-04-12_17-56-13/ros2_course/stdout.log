@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating ros2_course.egg-info
+writing ros2_course.egg-info/PKG-INFO
+writing dependency_links to ros2_course.egg-info/dependency_links.txt
+writing entry points to ros2_course.egg-info/entry_points.txt
+writing requirements to ros2_course.egg-info/requires.txt
+writing top-level names to ros2_course.egg-info/top_level.txt
+writing manifest file 'ros2_course.egg-info/SOURCES.txt'
+reading manifest file 'ros2_course.egg-info/SOURCES.txt'
+writing manifest file 'ros2_course.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspace/install/ros2_course/lib/python3.10/site-packages/ros2-course.egg-link (link to .)
+Installing hello = ros2_course.hello:maintalker script to /workspace/install/ros2_course/lib/ros2_course
+
+Installed /workspace/build/ros2_course
+running symlink_data
+creating /workspace/install/ros2_course/share/ament_index
+creating /workspace/install/ros2_course/share/ament_index/resource_index
+creating /workspace/install/ros2_course/share/ament_index/resource_index/packages
+symbolically linking /workspace/build/ros2_course/resource/ros2_course -> /workspace/install/ros2_course/share/ament_index/resource_index/packages
+symbolically linking /workspace/build/ros2_course/package.xml -> /workspace/install/ros2_course/share/ros2_course

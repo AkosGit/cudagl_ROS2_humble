@@ -1,0 +1,19 @@
+[0.309s] Invoking command in '/workspace/ros2_ws/build/ros2_course': PYTHONPATH=/workspace/ros2_ws/build/ros2_course/prefix_override:/workspace/ros2_ws/install/ros2_course/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/ros2_ws/build/ros2_course/build --no-deps symlink_data
+[0.445s] running develop
+[0.445s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.445s]   warnings.warn(
+[0.510s] running egg_info
+[0.510s] writing ros2_course.egg-info/PKG-INFO
+[0.511s] writing dependency_links to ros2_course.egg-info/dependency_links.txt
+[0.511s] writing entry points to ros2_course.egg-info/entry_points.txt
+[0.511s] writing requirements to ros2_course.egg-info/requires.txt
+[0.511s] writing top-level names to ros2_course.egg-info/top_level.txt
+[0.512s] reading manifest file 'ros2_course.egg-info/SOURCES.txt'
+[0.513s] writing manifest file 'ros2_course.egg-info/SOURCES.txt'
+[0.514s] running build_ext
+[0.514s] Creating /workspace/ros2_ws/install/ros2_course/lib/python3.10/site-packages/ros2-course.egg-link (link to .)
+[0.514s] Installing hello = ros2_course.hello:maintalker script to /workspace/ros2_ws/install/ros2_course/lib/ros2_course
+[0.514s] 
+[0.514s] Installed /workspace/ros2_ws/build/ros2_course
+[0.515s] running symlink_data
+[0.530s] Invoked command in '/workspace/ros2_ws/build/ros2_course' returned '0': PYTHONPATH=/workspace/ros2_ws/build/ros2_course/prefix_override:/workspace/ros2_ws/install/ros2_course/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/ros2_ws/build/ros2_course/build --no-deps symlink_data

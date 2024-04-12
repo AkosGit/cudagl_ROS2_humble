@@ -1,0 +1,26 @@
+[0.329s] Invoking command in '/workspace/ros2_ws/build/ros2_course': PYTHONPATH=/workspace/ros2_ws/build/ros2_course/prefix_override:/workspace/ros2_ws/install/ros2_course/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/ros2_ws/build/ros2_course/build --no-deps symlink_data
+[0.465s] running develop
+[0.466s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.466s]   warnings.warn(
+[0.529s] running egg_info
+[0.529s] creating ros2_course.egg-info
+[0.529s] writing ros2_course.egg-info/PKG-INFO
+[0.529s] writing dependency_links to ros2_course.egg-info/dependency_links.txt
+[0.529s] writing entry points to ros2_course.egg-info/entry_points.txt
+[0.529s] writing requirements to ros2_course.egg-info/requires.txt
+[0.529s] writing top-level names to ros2_course.egg-info/top_level.txt
+[0.530s] writing manifest file 'ros2_course.egg-info/SOURCES.txt'
+[0.531s] reading manifest file 'ros2_course.egg-info/SOURCES.txt'
+[0.531s] writing manifest file 'ros2_course.egg-info/SOURCES.txt'
+[0.532s] running build_ext
+[0.532s] Creating /workspace/ros2_ws/install/ros2_course/lib/python3.10/site-packages/ros2-course.egg-link (link to .)
+[0.532s] Installing hello script to /workspace/ros2_ws/install/ros2_course/lib/ros2_course
+[0.533s] 
+[0.533s] Installed /workspace/ros2_ws/build/ros2_course
+[0.533s] running symlink_data
+[0.533s] creating /workspace/ros2_ws/install/ros2_course/share/ament_index
+[0.533s] creating /workspace/ros2_ws/install/ros2_course/share/ament_index/resource_index
+[0.533s] creating /workspace/ros2_ws/install/ros2_course/share/ament_index/resource_index/packages
+[0.533s] symbolically linking /workspace/ros2_ws/build/ros2_course/resource/ros2_course -> /workspace/ros2_ws/install/ros2_course/share/ament_index/resource_index/packages
+[0.533s] symbolically linking /workspace/ros2_ws/build/ros2_course/package.xml -> /workspace/ros2_ws/install/ros2_course/share/ros2_course
+[0.548s] Invoked command in '/workspace/ros2_ws/build/ros2_course' returned '0': PYTHONPATH=/workspace/ros2_ws/build/ros2_course/prefix_override:/workspace/ros2_ws/install/ros2_course/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/ros2_ws/build/ros2_course/build --no-deps symlink_data
