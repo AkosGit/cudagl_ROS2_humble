@@ -14,5 +14,6 @@ docker run --gpus all --privileged --rm -it \
            --env="DISPLAY=${DISPLAY}" \
            --env=TERM=xterm-256color \
            --env=QT_X11_NO_MITSHM=1 \
+           --name=ROS \
            atinfinity/cudagl:11.8.0-cudnn8-devel-ubuntu22.04 \
            bash
