@@ -80,4 +80,6 @@ RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/p
 RUN apt-get update
 RUN apt-get install gz-harmonic -y --no-install-recommends 
 
+RUN apt install ros-humble-ros-gzharmonic -y --no-install-recommends
+
 #RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc # not working

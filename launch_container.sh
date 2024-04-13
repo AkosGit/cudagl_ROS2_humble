@@ -18,3 +18,6 @@ docker run --gpus all --privileged --rm -it \
            --name=ROS \
            atinfinity/cudagl:11.8.0-cudnn8-devel-ubuntu22.04 \
            bash
+
+# fix for https://github.com/ros2/ros2/issues/1531
+#docker exec -it ROS ulimit -n 1024
