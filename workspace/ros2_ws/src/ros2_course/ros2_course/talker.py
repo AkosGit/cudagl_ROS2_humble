@@ -10,7 +10,9 @@ class MinimalSubscriber(Node):
     def __init__(self):
         super().__init__('minimal_subscriber')
         self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
-
+        self.roll = 0
+        self.pitch = 0
+        self.yaw = 0
 
         self.lidar_subscription = self.create_subscription(
             LaserScan,
@@ -47,7 +49,7 @@ class MinimalSubscriber(Node):
             if min_dist < 3.0:
                 self.turn_left(0.05)
         else:
-            if abs(self.yaw) >= abs(self.target_angle)-0.17:
+            if abs(self.yaw) >= abs(self.target_angle)-0.18:
                 print(self.yaw)
                 self.forward(0.3)
                 self.turn_in_progress = False
@@ -59,10 +61,22 @@ class MinimalSubscriber(Node):
         vel_msg.linear.z = 0.0
         vel_msg.angular.x = 0.0
         vel_msg.angular.y = 0.0
-        vel_msg.angular.z = math.pi / 10
+        vel_msg.angular.z = math.pi / 11
         self.publisher.publish(vel_msg)
         self.turn_in_progress = True
         self.target_angle = math.pi / 2
+
+    def turn_right(self, speed):
+        vel_msg = Twist()
+        vel_msg.linear.x = speed
+        vel_msg.linear.y = 0.0
+        vel_msg.linear.z = 0.0
+        vel_msg.angular.x = 0.0
+        vel_msg.angular.y = 0.0
+        vel_msg.angular.z = - math.pi / 11
+        self.publisher.publish(vel_msg)
+        self.turn_in_progress = True
+        self.target_angle = - math.pi / 2
 
     def forward(self, speed):
         vel_msg = Twist()
