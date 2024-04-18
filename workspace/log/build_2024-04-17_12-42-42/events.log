@@ -1,0 +1,30 @@
+[0.000000] (-) TimerEvent: {}
+[0.000270] (ros2_course) JobQueued: {'identifier': 'ros2_course', 'dependencies': OrderedDict()}
+[0.000365] (ros2_course) JobStarted: {'identifier': 'ros2_course'}
+[0.099787] (-) TimerEvent: {}
+[0.199967] (-) TimerEvent: {}
+[0.300157] (-) TimerEvent: {}
+[0.313741] (ros2_course) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/workspace/build/ros2_course/build', '--no-deps', 'symlink_data'], 'cwd': '/workspace/build/ros2_course', 'env': {'LIBRARY_PATH': '/usr/local/cuda/lib64/stubs', 'NV_LIBCUBLAS_VERSION': '11.11.3.6-1', 'NV_NVPROF_DEV_PACKAGE': 'cuda-nvprof-11-8=11.8.87-1', 'NV_CUDA_COMPAT_PACKAGE': 'cuda-compat-11-8', 'NV_CUDA_NSIGHT_COMPUTE_VERSION': '11.8.0-1', 'HOSTNAME': 'b24d5ee70879', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'NV_LIBNCCL_PACKAGE_VERSION': '2.15.5-1', 'HOME': '/root', 'OLDPWD': '/', 'NV_CUDNN_PACKAGE_NAME': 'libcudnn8', 'NV_LIBCUBLAS_DEV_VERSION': '11.11.3.6-1', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'NV_LIBNCCL_DEV_PACKAGE_VERSION': '2.15.5-1', 'NV_LIBNPP_PACKAGE': 'libnpp-11-8=11.8.0.86-1', 'NV_CUDNN_PACKAGE': 'libcudnn8=8.9.6.50-1+cuda11.8', 'CUDA_VERSION': '11.8.0', 'COLCON_PREFIX_PATH': '/workspace/ros2_ws/install', 'NV_NVPROF_VERSION': '11.8.87-1', 'ROS_DISTRO': 'humble', 'NV_LIBCUBLAS_PACKAGE_NAME': 'libcublas-11-8', 'NVIDIA_REQUIRE_CUDA': 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NV_LIBCUSPARSE_VERSION': '11.7.5.86-1', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics', 'NV_CUDA_LIB_VERSION': '11.8.0-1', 'NV_LIBNCCL_PACKAGE_NAME': 'libnccl2', 'NV_NVML_DEV_VERSION': '11.8.86-1', 'NV_LIBNPP_DEV_PACKAGE': 'libnpp-dev-11-8=11.8.0.86-1', 'TERM': 'xterm-256color', 'NV_CUDA_CUDART_VERSION': '11.8.89-1', 'NV_CUDNN_PACKAGE_DEV': 'libcudnn8-dev=8.9.6.50-1+cuda11.8', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'NV_LIBCUBLAS_DEV_PACKAGE_NAME': 'libcublas-dev-11-8', 'NV_LIBCUBLAS_PACKAGE': 'libcublas-11-8=11.11.3.6-1', 'NVARCH': 'x86_64', 'NV_LIBNCCL_DEV_PACKAGE_NAME': 'libnccl-dev', 'NV_LIBCUSPARSE_DEV_VERSION': '11.7.5.86-1', 'DISPLAY': ':1', 'NV_LIBNCCL_PACKAGE': 'libnccl2=2.15.5-1+cuda11.8', 'NVIDIA_PRODUCT_NAME': 'CUDA', 'NV_CUDA_CUDART_DEV_VERSION': '11.8.89-1', 'XAUTHORITY': '/tmp/.docker.xauth', 'AMENT_PREFIX_PATH': '/workspace/ros2_ws/install/ros2_course:/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'NV_LIBCUBLAS_DEV_PACKAGE': 'libcublas-dev-11-8=11.11.3.6-1', 'NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE': 'cuda-nsight-compute-11-8=11.8.0-1', 'NV_LIBNCCL_DEV_PACKAGE': 'libnccl-dev=2.15.5-1+cuda11.8', 'NV_NVTX_VERSION': '11.8.86-1', 'NV_LIBNPP_VERSION': '11.8.0.86-1', 'NV_CUDNN_VERSION': '8.9.6.50', 'PWD': '/workspace/build/ros2_course', 'PYTHONPATH': '/workspace/build/ros2_course/prefix_override:/workspace/install/ros2_course/lib/python3.10/site-packages:/workspace/ros2_ws/build/ros2_course:/workspace/ros2_ws/install/ros2_course/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'NCCL_VERSION': '2.15.5-1', 'COLCON': '1', 'NV_LIBNPP_DEV_VERSION': '11.8.0.86-1'}, 'shell': False}
+[0.400246] (-) TimerEvent: {}
+[0.457389] (ros2_course) StdoutLine: {'line': b'running develop\n'}
+[0.457627] (ros2_course) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[0.457725] (ros2_course) StderrLine: {'line': b'  warnings.warn(\n'}
+[0.500319] (-) TimerEvent: {}
+[0.524407] (ros2_course) StdoutLine: {'line': b'running egg_info\n'}
+[0.524547] (ros2_course) StdoutLine: {'line': b'writing ros2_course.egg-info/PKG-INFO\n'}
+[0.524720] (ros2_course) StdoutLine: {'line': b'writing dependency_links to ros2_course.egg-info/dependency_links.txt\n'}
+[0.524848] (ros2_course) StdoutLine: {'line': b'writing entry points to ros2_course.egg-info/entry_points.txt\n'}
+[0.524942] (ros2_course) StdoutLine: {'line': b'writing requirements to ros2_course.egg-info/requires.txt\n'}
+[0.525064] (ros2_course) StdoutLine: {'line': b'writing top-level names to ros2_course.egg-info/top_level.txt\n'}
+[0.526228] (ros2_course) StdoutLine: {'line': b"reading manifest file 'ros2_course.egg-info/SOURCES.txt'\n"}
+[0.526690] (ros2_course) StdoutLine: {'line': b"writing manifest file 'ros2_course.egg-info/SOURCES.txt'\n"}
+[0.527582] (ros2_course) StdoutLine: {'line': b'running build_ext\n'}
+[0.527700] (ros2_course) StdoutLine: {'line': b'Creating /workspace/install/ros2_course/lib/python3.10/site-packages/ros2-course.egg-link (link to .)\n'}
+[0.528204] (ros2_course) StdoutLine: {'line': b'Installing hello script to /workspace/install/ros2_course/lib/ros2_course\n'}
+[0.528289] (ros2_course) StdoutLine: {'line': b'Installing talker script to /workspace/install/ros2_course/lib/ros2_course\n'}
+[0.528393] (ros2_course) StdoutLine: {'line': b'\n'}
+[0.528438] (ros2_course) StdoutLine: {'line': b'Installed /workspace/build/ros2_course\n'}
+[0.528467] (ros2_course) StdoutLine: {'line': b'running symlink_data\n'}
+[0.543667] (ros2_course) CommandEnded: {'returncode': 0}
+[0.550730] (ros2_course) JobEnded: {'identifier': 'ros2_course', 'rc': 0}
+[0.551091] (-) EventReactorShutdown: {}
