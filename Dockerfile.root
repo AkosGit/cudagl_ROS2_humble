@@ -60,5 +60,7 @@ RUN apt-get update
 RUN apt-get install gz-harmonic -y --no-install-recommends 
 
 RUN apt install ros-humble-ros-gzharmonic -y --no-install-recommends
+RUN apt install python3-pip -y --no-install-recommends
+RUN pip3 install transforms3d
 
 #RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc # not working?

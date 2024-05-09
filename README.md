@@ -33,5 +33,3 @@ ros2 run ros2_course talker
 ## Usefull
 - [ROS GZ bridge communication](https://github.com/gazebosim/ros_gz/tree/ros2/ros_gz_bridge)
 - [Harmonic tutorials](https://gazebosim.org/docs/harmonic/moving_robot)
-
-2.6-3.2
