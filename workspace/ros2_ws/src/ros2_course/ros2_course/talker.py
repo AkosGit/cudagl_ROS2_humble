@@ -61,7 +61,7 @@ class MinimalSubscriber(Node):
                 self.stuck_count = 0
             else:            
                 # when its reached angle
-                if abs(self.yaw) >= abs(self.target_angle)-0.1 or abs(self.yaw) >= abs(self.target_angle)+0.1:
+                if abs(self.yaw) >= abs(self.target_angle)-0.2 and abs(self.yaw) <= abs(self.target_angle)+0.2:
                     self.get_logger().info('target angle reached: "%s"' % self.target_angle)
                     self.turn_in_progress = False
                     self.direction = 0
@@ -71,17 +71,21 @@ class MinimalSubscriber(Node):
                         self.get_logger().info('stuck: "%s"' % self.current_distance)
                         self.stuck_count = self.stuck_count + 1
                         self.direction = self.direction + 1
-
-        if self.direction == 0:
-            self.forward(0.3)
-        if self.direction == 1:
-            self.turn_left(0.3)
-        if self.direction == 2:
-            self.turn_right(0.3)
-        if self.direction == 3:
-            self.backwards(0.5)
-            time.sleep(2)
-            self.forward(0.3)
+                        self.turn_in_progress = False
+        
+        if not self.turn_in_progress:
+            # Act on direction
+            if self.direction == 0:
+                self.forward(0.3)
+            if self.direction == 1:
+                self.turn_left(0.3)
+            if self.direction == 2:
+                self.turn_right(0.3)
+            if self.direction == 3:
+                self.backwards(0.5)
+                time.sleep(2)
+                self.forward(0.4)
+                self.direction = 0
 
 
         self.current_distance = self.prev_distance
