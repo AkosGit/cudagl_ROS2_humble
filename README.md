@@ -20,7 +20,7 @@ sudo ./launch_terminal.sh
 ## Start project
 
 
-### Start sensors
+### Start bridges
 ```bash
 cd ./workspace
 ulimit -n 1024
