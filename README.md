@@ -18,14 +18,42 @@ sudo ./launch_terminal.sh
 
 
 ## Start project
+
+
+### Start sensors
 ```bash
 cd ./workspace
 ulimit -n 1024
-gz sim building_robot.sdf
-ros2 run ros_gz_bridge parameter_bridge /lidar@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan
-ros2 run ros_gz_bridge parameter_bridge /cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist
-ros2 run ros_gz_bridge parameter_bridge /imu@sensor_msgs/msg/Imu@gz.msgs.IMU
 source ./ros2_ws/install/setup.bash
+ros2 run ros_gz_bridge parameter_bridge /lidar@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan
+```
+
+```bash
+cd ./workspace
+ulimit -n 1024
+source ./ros2_ws/install/setup.bash
+ros2 run ros_gz_bridge parameter_bridge /cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist
+```
+
+```bash
+cd ./workspace
+ulimit -n 1024
+source ./ros2_ws/install/setup.bash
+ros2 run ros_gz_bridge parameter_bridge /imu@sensor_msgs/msg/Imu@gz.msgs.IMU
+```
+
+
+### Start Gazebo world
+```bash
+cd ./workspace
+gz sim building_robot.sdf
+```
+
+
+### Build and run project
+```bash
+source ./ros2_ws/install/setup.bash
+ulimit -n 1024
 colcon build --symlink-install
 ros2 run ros2_course talker
 ```
