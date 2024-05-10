@@ -52,6 +52,7 @@ gz sim building_robot.sdf
 
 ### Build and run project
 ```bash
+cd ./workspace
 source ./ros2_ws/install/setup.bash
 ulimit -n 1024
 colcon build --symlink-install
